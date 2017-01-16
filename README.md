@@ -4,7 +4,16 @@ Simple decryptor for crypted files within the AdWind/jRAT/jBifrost Java RAT.
 
 ## Usage
 
-    java -jar AdWindDecryptor.jar -a /home/michael/Disassembly/Malware/AdWind/unzip/mega.download -p /home/michael/Disassembly/Malware/AdWind/unzip/sky.drive -i /home/michael/Disassembly/Malware/AdWind/unzip/drop.box -o outputfile.txt
+    java -jar dist/AdWindDecryptor.jar 
+    Missing required options: r, i, o
+    usage: java -jar AdWindDecryptor
+     -a,--aeskeyfile <arg>   AES key file path
+     -i,--input <arg>        input file path
+     -o,--output <arg>       decrypted output file path
+     -r,--rsakeyfile <arg>   serialized RSA KeyRep file path
+
+
+    java -jar AdWindDecryptor.jar -a mega.download -r sky.drive -i drop.box -o decrypted-file
 
 ## WARNING
 This decryptor unserializes an object that is part of the malware. Therefore, it is possible that the the decryptor could get hijacked by the malware. Only use in an isolated environment and with caution.

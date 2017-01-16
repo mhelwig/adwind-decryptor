@@ -24,7 +24,7 @@ import org.apache.commons.io.IOUtils;
         
 /**
  *
- * @author michael
+ * @author Michael Helwig
  */
 public class AdWindDecryptor {
 
@@ -36,11 +36,11 @@ public class AdWindDecryptor {
         
         Options options = new Options();
         
-        Option rsakeyfile = new Option("r", "rsakeyfile", true, "serialized RSA KeyRep file path"); //sky.drive
+        Option rsakeyfile = new Option("r", "rsakeyfile", true, "serialized RSA KeyRep file path");
         rsakeyfile.setRequired(true);
         options.addOption(rsakeyfile);
         
-        Option aeskeyfile = new Option("a", "aeskeyfile", true, "AES key file path"); //
+        Option aeskeyfile = new Option("a", "aeskeyfile", true, "AES key file path");
         rsakeyfile.setRequired(true);
         options.addOption(aeskeyfile);
 
