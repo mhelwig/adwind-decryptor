@@ -1,6 +1,6 @@
 # AdWind Decryptor
 
-Simple decryptor for crypted files in the AdWind/jRAT/jBifrost Java RAT.
+Simple decryptor for encrypted files in the AdWind/jRAT/jBifrost Java RAT.
 
 ## Usage
 
