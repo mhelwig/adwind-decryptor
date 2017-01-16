@@ -1,17 +1,16 @@
 # AdWind Decryptor
 
-Simple decryptor for crypted files within the AdWind/jRAT/jBifrost Java RAT.
+Simple decryptor for crypted files in the AdWind/jRAT/jBifrost Java RAT.
 
 ## Usage
 
-    java -jar dist/AdWindDecryptor.jar 
-    Missing required options: r, i, o
     usage: java -jar AdWindDecryptor
      -a,--aeskeyfile <arg>   AES key file path
      -i,--input <arg>        input file path
      -o,--output <arg>       decrypted output file path
      -r,--rsakeyfile <arg>   serialized RSA KeyRep file path
 
+## Example
 
     java -jar AdWindDecryptor.jar -a mega.download -r sky.drive -i drop.box -o decrypted-file
 
